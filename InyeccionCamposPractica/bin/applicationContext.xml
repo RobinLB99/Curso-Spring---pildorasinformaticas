@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd
+">
+	<!--Beans de dependencias-->
+	
+
+
+	<!--Inyeccion de dependencia por constructor -->
+	
+
+
+	<!--Inyeccion de dependencia por setter-->
+	<bean id="miCarroChevrolet" class="com.robinlb.practicaInyeccionCampos.Modelo.ChevroletCar">
+		<property name="marca" value="Chevrolet"></property>
+	</bean>
+
+</beans>
