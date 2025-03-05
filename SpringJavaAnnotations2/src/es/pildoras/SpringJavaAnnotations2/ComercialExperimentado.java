@@ -1,4 +1,4 @@
-package es.pildorasinformaticas.SpringJavaAnnotations;
+package es.pildoras.SpringJavaAnnotations2;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -65,7 +65,7 @@ public class ComercialExperimentado implements Empleado {
 	//Ejecucion del codigo despues de apagado el contenedor Spring (Necesita Singleton)
 	@PreDestroy
 	public void ejecutadoAntesDestruccion() {
-		System.out.println("EJecutado antes de la destruccion");
+		System.out.println("Ejecutado antes de la destruccion");
 	}
 	
 	@Override
