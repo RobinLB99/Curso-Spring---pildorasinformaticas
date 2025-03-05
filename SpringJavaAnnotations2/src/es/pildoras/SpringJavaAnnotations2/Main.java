@@ -12,10 +12,14 @@ public class Main {
 		//Leer el class de configuracion
 		AnnotationConfigApplicationContext contexto =  new AnnotationConfigApplicationContext(EmpleadoConfig.class);
 		
-		Empleado empleado = contexto.getBean("directorFinanciero", Empleado.class);
-		
+		Empleado empleado = contexto.getBean("directorFinanciero", Empleado.class);		
 		System.out.println(empleado.getTareas());
 		System.out.println(empleado.getInforme());
+		
+		DirectorFinanciero directorFinanciero = contexto.getBean("directorFinanciero", DirectorFinanciero.class);
+		System.out.println("\n" + directorFinanciero.getEmail());
+		System.out.println(directorFinanciero.getNombreEmpresa());
+		
 		
 		//Especificando el ID del Bean
 		//Empleado robin = contexto.getBean("elSeñorComercialExperimentado", Empleado.class);
