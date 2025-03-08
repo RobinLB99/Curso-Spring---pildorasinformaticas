@@ -23,7 +23,7 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/vista/" />
 		<property name="suffix" value=".jsp" />
-	</bean>
+	</bean>	
 	
 	<mvc:resources mapping="/static/**" location="/static/" cache-period="31556926"></mvc:resources>
 

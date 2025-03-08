@@ -17,11 +17,37 @@
 		
 		<label for="nombreAlumno">Nombre:</label><br>
 		<form:input id="nombreAlumno" path="nombre"/><!-- path -> hace referencia a los getters y setter en la clase Alumno -->
-		<br>
+		<form:errors path="nombre" cssClass="error" />
+		<br><br>
 		<label for="apellidoAlumno">Apellido:</label><br>
 		<form:input id="apellidoAlumno" path="apellido"/>
+		<form:errors path="apellido" cssClass="error" />
+		<br><br>
+		<label for="edadAlumno">Edad:</label><br>
+		<form:input id="edadAlumno" path="edad"/>
+		<form:errors path="edad" cssClass="error" />
+		<br><br>
+		<label for="emailAlumno">Email:</label><br>
+		<form:input id="emailAlumno" path="email"/>
+		<form:errors path="email" cssClass="error" />
+		<br><br>
+		<label for="asignatura">Asignatura Optativa:</label><br>
+		<form:select id="asignatura" path="optativa" multiple="true">
+			<form:option value="Ajedrez" label="Ajedrez"/>
+			<form:option value="Cultura" label="Cultura"/>
+		</form:select>
+		<br> <br>
+		Ciudad de Estudios: <br>
+		<form:radiobutton path="ciudadEstudio" value="Guayaquil"/> Guayaquil <br>
+		<form:radiobutton path="ciudadEstudio" value="Quito"/> Quito <br>
+		<form:radiobutton path="ciudadEstudio" value="Cuenca"/> Cuenca <br>
+		<br>
+		Idiomas a cursar: <br>
+		<form:checkbox path="idiomas" value="Ingles"/> Ingles <br>
+		<form:checkbox path="idiomas" value="Portugues"/> Portugues <br>
+		<form:checkbox path="idiomas" value="Frances"/> Frances <br>
 		
-		<button type="submit">Registrar</button>
+		<input type="submit" value="Enviar">
 		
 	</form:form>
 
